@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Té como señora</title>
-    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header>
@@ -15,12 +15,16 @@
 	<div>
 		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
 		</div>
+		<div id="photo">
+	<IMG SRC="https://s-media-cache-ak0.pinimg.com/originals/97/10/88/971088738bb1758538ed2c9c61ee9d48.jpg" WIDTH=600 HEIGHT=300 BORDER=2 VSPACE=3 HSPACE=3 ALT="Obra de K. Haring">
+
+	</div>
 		
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
 		
-		<form action="">
-			<label for="Nombre Dueño"> Nombre:</label>
-			<input type="text">
+		<form action="" id="FormCont">
+			<label for="Nombre Dueño" > Nombre:</label>
+			<input type="text" id="Nombre">
 			<label for="Nombre mascota"> Apellido:</label>
 			<input type="text">
 			<label for="Email"> Correo Electrónico:</label> 
@@ -38,7 +42,7 @@
 			</select>
 			<label for=""></label>
 			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
-			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
+			<button type="submit" form="form1" value="Submit" onclick="mostrarData(FormCont)">Enviar</button>
 		</form>
 
 	</section>
@@ -48,6 +52,45 @@
 	<section id="productos">
 		<!-- Acá puedes crear lo que quieras-->
 	</section>
+
+ <div>
+ <p> SÍGUENOS</p>
+ </div>
+	<div id="share-buttons">
+    
+   
+    
+    <!-- Email -->
+    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+ 
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=https://simplesharebuttons.com" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+    
+    
+    
+    <!-- Pinterest -->
+    <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+        <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+    </a>
+    
+  
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+    
+   
+
+</div>
 	<script src="js/main.js"></script>
 </body>
 </html>
